@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Real-Time Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Cloud Monitoring Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
-<h1>Student Analytics Dashboard</h1>
+<h1>Cloud Infrastructure Monitoring Dashboard</h1>
 
-<div class="cards">
-  <div class="card">Total Students: <span id="students">120</span></div>
-  <div class="card">Attendance: <span id="attendance">75%</span></div>
+<div class="metrics">
+  <div class="card">CPU Usage: <span id="cpu">0%</span></div>
+  <div class="card">Memory Usage: <span id="memory">0%</span></div>
+  <div class="card">Network: <span id="network">0 Mbps</span></div>
+  <div class="card">Service Status: <span id="service">RUNNING</span></div>
 </div>
 
-<canvas id="resultChart"></canvas>
+<h3 id="alert">System Stable ✅</h3>
 
-<script src="script.js"></script>
+<canvas id="cpuChart"></canvas>
+
+<script type="module" src="js/app.js"></script>
 </body>
 </html>
+
